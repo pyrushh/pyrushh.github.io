@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #232425;
+}
+
+.link,
+.body-links {
+    color: #09aeae;
+    transition: 0.s all ease-in;
+}
+
+.link :hover,
+.body-links:hover {
+    color: #96ffff;
+}
+
+.bg-txt {
+    color: #7b7e81;
+}
+
+.gray {
+    color: #cccccc;
+}
