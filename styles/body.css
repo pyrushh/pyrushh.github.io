@@ -4,12 +4,10 @@
     margin: 2rem auto;
     background: #1b1c1d;
     box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.74);
-    -webkit-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.74);
-    -moz-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.74);
 }
 
 .box-body {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
 .header {
@@ -17,7 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px 20px 5px;
+    padding: 10px 5px;
 }
 
 .header h2 {
@@ -32,21 +30,23 @@
     font-size: 15px;
 }
 
+.link {
+    padding: 7px 0;
+}
+
 ol {
     padding: 5px 1.3rem;
 }
 
-li {
-    padding: 5px 0;
-}
+
 
 .body-links {
     display: block;
 }
 
 @media screen and (max-width: 600px) {
-    li {
-        padding: 1rem 0;
+    .link {
+        padding: 14px 0;
     }
 
 
@@ -56,10 +56,26 @@ li {
     .content-box {
         max-width: 340px;
     }
+
+    .header a h2 {
+        font-size: 20px;
+    }
+
+    .header h4 {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 355px) {
     .content-box {
         max-width: 270px;
+    }
+
+    .header a h2 {
+        font-size: 16px;
+    }
+
+    .header h4 {
+        font-size: 12px;
     }
 }

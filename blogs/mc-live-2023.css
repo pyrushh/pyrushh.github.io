@@ -1,0 +1,20 @@
+.blog-img-main {
+    width: 250px;
+    padding: 20px 0;
+}
+
+.blog-body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 21px;
+}
+
+.blog-text {
+    padding-bottom: 10px;
+    line-height: 1.4;
+}

@@ -9,7 +9,11 @@
         <meta name="description"
             content="Welcome to Pyrushh's Blogs! Here, you'll find my thoughts on a wide range of topics, from Minecraft adventures to personal insights. ">
         <link rel="stylesheet" href="styles/body.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="assets/images/logo-nobg.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/blogs.css">
         <link rel="stylesheet" href="styles/main.css">
         <title> Blogs | PYRUSHH</title>
     </head>
@@ -17,7 +21,35 @@
 </head>
 
 <body>
-    <h1 style="color: white;">UNDER CONSTRUCTION</h1>
+    <main class="content-box">
+        <div class="box-body">
+            <header class="header">
+                <a href="/" id="name" class="link">
+                    <h2><i class="fa-solid fa-arrow-left"></i>Home</h2>
+                </a>
+                <h4 class="bg-txt"> <span id="element"></span></h4>
+            </header>
+        </div>
+    </main>
+    <a href="blogs/mc-live-2023" class="blog">
+        <div class="content-box">
+            <div class="box-body blog-body">
+                <img src="assets/images/blogs/image.webp" alt="Minecraft Live Banner" class="blog-img">
+                <div class="blog-txts">
+                    <h2 class="blog-title gray">Minecraft Live 2023 (Expectations)</h2>
+                    <p class="date bg-txt">Published date:
+                        2023-10-2
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+    <!-- Javascript -->
+    <script src="logic/typed.js"></script>
+    <!-- Using Typed.js by https://github.com/mattboldt/typed.js/  -->
+    <script src="logic/index.js"></script>
+    <!-- Javascript -->
+
 </body>
 
 </html>
