@@ -70,3 +70,57 @@ document.addEventListener("keydown", function (event) {
     handleBackAnchorClick();
   }
 });
+
+// Get references to the search input and live search results container
+const blogSearchInput = document.getElementById("blog-search-input");
+const liveSearchResults = document.getElementById("live-search-results");
+
+// Define the content of your blog for searching (you can replace this with the actual blog content)
+const blogContent = {
+  title: "Minecraft Live 2023 (Expectations)",
+  content:
+    "Minecraft Live 2023 is an annual live event hosted by Mojang Studios...",
+  url: "/blogs/mc-live-2023.html",
+};
+
+// Function to perform the live blog search
+function performLiveBlogSearch(query) {
+  // Clear previous search results
+  liveSearchResults.innerHTML = "";
+
+  // Check if the query is empty or consists of whitespace
+  if (!query.trim()) {
+    return;
+  }
+
+  // Check if the query matches the blog title or content
+  if (
+    blogContent.title.toLowerCase().includes(query.toLowerCase()) ||
+    blogContent.content.toLowerCase().includes(query.toLowerCase())
+  ) {
+    const resultItem = document.createElement("li");
+    const resultLink = document.createElement("a");
+    resultLink.href = blogContent.url;
+    resultLink.textContent = blogContent.title;
+    resultItem.appendChild(resultLink);
+    liveSearchResults.appendChild(resultItem);
+  } else {
+    const noResultsItem = document.createElement("li");
+    noResultsItem.textContent = "No results found in this blog.";
+    liveSearchResults.appendChild(noResultsItem);
+  }
+}
+
+// Event listener for input changes in the blog search input
+blogSearchInput.addEventListener("input", function () {
+  const query = blogSearchInput.value;
+  performLiveBlogSearch(query);
+});
+
+// Event listener for the Backspace key
+blogSearchInput.addEventListener("keydown", function (event) {
+  if (event.key === "Backspace" && !blogSearchInput.value.trim()) {
+    // Clear the search results when Backspace is pressed and the search input is empty
+    liveSearchResults.innerHTML = "";
+  }
+});
