@@ -70,7 +70,7 @@ document.addEventListener("keydown", function (event) {
     handleBackAnchorClick();
   }
 });
-
+//why is this not working?
 
 // Get references to the search input and live search results container
 const blogSearchInput = document.getElementById("blog-search-input");
