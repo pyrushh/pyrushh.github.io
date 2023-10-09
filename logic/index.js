@@ -71,6 +71,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
+
 // Get references to the search input and live search results container
 const blogSearchInput = document.getElementById("blog-search-input");
 const liveSearchResults = document.getElementById("live-search-results");
@@ -124,3 +125,4 @@ blogSearchInput.addEventListener("keydown", function (event) {
     liveSearchResults.innerHTML = "";
   }
 });
+ main
