@@ -35,10 +35,9 @@ function handleKeyPress(event) {
 // Add the key press event listener to the document
 document.addEventListener("keydown", handleKeyPress);
 
-// Function to handle "Esc" key press
-function handleEscKeyPress(event) {
-  if (event.key === "Escape") {
-    // Get a reference to the anchor tag
+// Function to handle "backspace" key press
+function handleBackspaceKeyPress(event) {
+  if (event.key === "Backspace") {
     const anchor = document.getElementById("name");
 
     if (anchor) {
@@ -48,14 +47,12 @@ function handleEscKeyPress(event) {
 }
 
 // Add the key press event listener to the document
-document.addEventListener("keydown", handleEscKeyPress);
+document.addEventListener("keydown", handleBackspaceKeyPress);
 
 // Function to handle "Back" anchor click
 function handleBackAnchorClick() {
-  // Get a reference to the anchor tag with the ID 'name'
   const anchor = document.getElementById("name");
 
-  // Check if the anchor tag exists
   if (anchor) {
     // Simulate a click on the anchor tag
     anchor.click();
@@ -64,10 +61,9 @@ function handleBackAnchorClick() {
 
 // Add a click event listener to the "Back" anchor tag
 document.addEventListener("keydown", function (event) {
-  // Check if the key pressed is the "Enter" key (key code 13)
-  if (event.key === "Escape") {
+  if (event.key === "Backspace") {
     // Call the function to handle the anchor click
     handleBackAnchorClick();
   }
 });
-//why is this not working?
+//its working
