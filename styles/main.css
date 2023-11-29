@@ -11,11 +11,13 @@ body {
 .link,
 .body-links {
     color: #09aeae;
-    transition: 0.s all ease-in;
+    transition: 0.1s all ease-in;
 }
 
 .link :hover,
-.body-links:hover {
+.body-links:hover,
+.link :focus,
+.body-links:focus {
     color: #96ffff;
 }
 
