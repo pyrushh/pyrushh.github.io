@@ -2,73 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Welcome to Pyrushh's official website! Here, you can dive into my world of small open-source projects and more. I'm passionate about coding and technology, and I'm excited to share my journey with you. Explore my latest projects, join in the tech discussions, and stay updated on my innovations. Whether you're a fellow developer or just curious about what I'm up to, come along on this digital adventure.">
-    <link rel="stylesheet" href="styles/body.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="assets/images/logo-nobg.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/main.css">
-    <title> Home | PYRUSHH</title>
+        content="Welcome to Pyrushh's official website! Here, you can dive into my world of small projects and more." />
+    <link rel="shortcut icon" href="assets/images/logo-nobg.png" type="image/x-icon" />
+    <link rel="stylesheet" href="blogs/styles/blogs.css">
+    <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>pyrushh | HOME</title>
 </head>
 
 <body>
-    <main class="content-box">
-        <div class="box-body">
-            <header class="header">
-                <a href="/" id="name" class="link">
-                    <h2>Pyrushh</h2>
-                </a>
-                <h4 class="bg-txt"> <span id="element"></span></h4>
-            </header>
-            <p class="body-txt gray">
-                Hey there! I'm Pyrushh, and I'm thrilled to have you here. This is where I share my passion for coding
-                and technology, along with some exciting open-source projects.
-                <br>
-                I love Minecraft and Wrestling.
-                I also share my random thoughts and musings in a blog-style format. So, whether
-                you're here for tech, Minecraft, wrestling, or just some good old-fashioned reading, you're in the right
-                place.
-
-            </p>
-        </div>
+    <main class="content-box box-body">
+        <header class="header">
+            <a href="/" id="name" class="link">
+                <h1>Welcome to my little burrow!</h1>
+            </a>
+            <h4 class="bg-txt"><span id="element"></span></h4>
+        </header>
+        <p class="body-txt">
+            Hey there! I'm Pyrushh. This is just my small website where I share my
+            journey thorugh life and learning new not so interesting things.
+            <br />
+            <br />
+            I also share my random thoughts and feelings in a blog-style format. So,
+            whether you're here for my ramblings, more of my ramblings, or just to
+            learn about me and my life, you are welcome here. 😊
+        </p>
     </main>
+    <nav class="content-box about box-body">
+        <header class="header">
+            <h2>Links</h2>
+        </header>
+        <ol>
+            <li>
+                <a href="/blog" class="link body-links"> Blogs </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/pyrushh" target="_blank" class="link body-links">Twitter</a>
+            </li>
+            <li>
+                <a href="https://github.com/pyrushh?tab=repositories" target="_blank" class="link body-links">GitHub
+                    Projects</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/kDDE5TaKvn" target="_blank" class="link body-links">Join Discord</a>
+            </li>
+        </ol>
+    </nav>
+    <article class="content-box box-body">
+        <header class="header"><a class="link" href="blog">
+                <h1>Blogs</h1>
+            </a></header>
 
-
-    <div class="content-box about">
-        <div class="box-body">
-            <header class="header">
-                <h2 class="gray">Links</h2>
-            </header>
-            <ol class="gray">
-                <li>
-                    <a href="/blog" class="link body-links">
-                        Blogs
-                    </a>
-                </li>
-                <li><a href="https://twitter.com/pyrushh" target="_blank" rel="noopener noreferrer"
-                        class="link body-links">Twitter <i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></li>
-                <li>
-                    <a href="https://github.com/pyrushh?tab=repositories" target="_blank" rel="noopener noreferrer"
-                        class="link body-links">
-                        GitHub Projects <i class="fa-solid fa-up-right-from-square fa-2xs"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://discord.gg/kDDE5TaKvn" target="_blank" rel="noopener noreferrer"
-                        class="link body-links">
-                        Join Discord <i class="fa-solid fa-up-right-from-square fa-2xs"></i>
-                    </a>
-                </li>
-            </ol>
-        </div>
-    </div>
-    <script src="logic/typed.js"></script>
-    <!-- Using Typed.js by https://github.com/mattboldt/typed.js/  -->
-    <script src="logic/index.js"></script>
+        <a href="blogs/mc-live-2023" class="blog">
+            <div class="content-box-blog link">
+                <div class=" blog-body">
+                    <img src="assets/blogs/image.webp" alt="Minecraft Live Banner" class="blog-img">
+                    <div class="blog-txts">
+                        <h2 class="blog-title ">Minecraft Live 2023 (Expectations)</h2>
+                        <p class="date">Published date:
+                            2023-10-2
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </article>
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>
