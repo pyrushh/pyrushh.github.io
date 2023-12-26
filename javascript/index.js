@@ -13,9 +13,7 @@ function handleKeyPress(event) {
     }
   }
 }
-// Add the key press event listener to the document
 document.addEventListener("keydown", handleKeyPress);
-// Function to handle "backspace" key press
 function handleBackspaceKeyPress(event) {
   if (event.key === "Backspace") {
     const anchor = document.getElementById("name");
@@ -25,19 +23,15 @@ function handleBackspaceKeyPress(event) {
     }
   }
 }
-// Add the key press event listener to the document
 document.addEventListener("keydown", handleBackspaceKeyPress);
-// Function to handle "Back" anchor click
 function handleBackAnchorClick() {
   const anchor = document.getElementById("name");
   if (anchor) {
     anchor.click();
   }
 }
-// Add a click event listener to the "Back" anchor tag
 document.addEventListener("keydown", function (event) {
   if (event.key === "Backspace") {
     handleBackAnchorClick();
   }
 });
-//its working

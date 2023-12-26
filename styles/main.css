@@ -22,5 +22,5 @@ body {
 .link:focus,
 .body-links:focus {
   color: #ffffff;
-  transform: scale(1.05);
+  transform: scaleY(1.1);
 }
