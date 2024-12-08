@@ -16,7 +16,9 @@ body {
   color: #09aeae;
   transition: 0.1s all ease-in;
 }
-
+p{
+  line-height: 1.4;
+}
 .link:hover,
 .body-links:hover,
 .link:focus,
