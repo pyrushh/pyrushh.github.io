@@ -4,7 +4,8 @@ function handleKeyPress(event) {
     event.key === "1" ||
     event.key === "2" ||
     event.key === "3" ||
-    event.key === "4"
+    event.key === "4" ||
+    event.key === "5"
   ) {
     const index = parseInt(event.key) - 1;
     const anchors = document.querySelectorAll(".link.body-links");
