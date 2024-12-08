@@ -8,7 +8,7 @@ body {
   border-radius: 0.5rem;
   max-width: 390px;
   margin: 2rem 1rem auto;
-  background: #1b1c1d;
+  /* background: #1b1c1d; */
   border: 2px solid #444444;
 }
 .box-body {
@@ -16,12 +16,15 @@ body {
 }
 .header {
   padding: 10px 5px;
+
+}
+a h1{
+  font-weight: 400;
 }
 .body-txt {
-  font-family: sans-serif;
-  line-height: 1.5;
+  line-height: 1.1;
   padding: 5px;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 .link {
   padding: 5px 0;
