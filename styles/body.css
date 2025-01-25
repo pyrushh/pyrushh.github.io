@@ -9,7 +9,7 @@ body {
   max-width: 390px;
   margin: 2rem 1rem auto;
   /* background: #1b1c1d; */
-  border: 2px solid #444444;
+  border: 2px dashed #09aeae;
 }
 .box-body {
   padding: 0.5rem 2rem;

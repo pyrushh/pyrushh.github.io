@@ -8,7 +8,7 @@
 
 body {
   color: #eeeeee;
-  background: #1e263b;
+  background: url(../assets/images/descaled.jpg) no-repeat center center fixed;
 }
 
 .link,
